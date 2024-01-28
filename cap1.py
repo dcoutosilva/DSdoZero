@@ -38,3 +38,15 @@ from __future__ import division
 nr_usuarios = len(users)
 media_conexoes = totalDeConexoes/ nr_usuarios
 print(media_conexoes)
+
+
+#criar uma lista
+
+numAmigosPorId = [(user["id"], nrDeAmigos(user)) for user in users]
+
+sorted_amigos = sorted(numAmigosPorId, key=lambda item: item[1], reverse=True)  # Corrected errors
+
+print(numAmigosPorId)
+  
+  
+  
